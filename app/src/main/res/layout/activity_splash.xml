@@ -6,17 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:backgroundTint="@color/purple_dark"
-    tools:context=".view.main.SplashActivity">
+    tools:context=".view.splash.SplashActivity">
 
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MENTALGLOW"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:textColor="@color/pink"/>
+        android:textSize="28sp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/iv_logo"
@@ -32,7 +30,6 @@
         android:gravity="center"
         android:layout_marginHorizontal="20dp"
         android:text="Guide Your Inner Well-being with the Light of MentalGlow!"
-        android:textSize="24sp"
-        android:textColor="@color/pink"/>
+        android:textSize="20sp"/>
 
 </LinearLayout>

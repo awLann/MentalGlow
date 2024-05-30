@@ -1,4 +1,4 @@
-package com.example.mentalglow.view.main
+package com.example.mentalglow.view.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
