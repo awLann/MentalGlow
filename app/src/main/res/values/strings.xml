@@ -2,7 +2,7 @@
     <string name="app_name">Mental Glow</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_text_analysis">Text Analysis</string>
+    <string name="title_image_analysis">Image Analysis</string>
     <string name="title_activity_main">MainActivity</string>
 </resources>

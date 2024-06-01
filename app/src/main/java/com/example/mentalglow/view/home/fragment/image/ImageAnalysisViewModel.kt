@@ -1,13 +1,13 @@
-package com.example.mentalglow.view.home.ui.home
+package com.example.mentalglow.view.home.fragment.image
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class ImageAnalysisViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is image analysis Fragment"
     }
     val text: LiveData<String> = _text
 }

@@ -1,13 +1,13 @@
-package com.example.mentalglow.view.home.ui.notifications
+package com.example.mentalglow.view.home.fragment.text
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class TextAnalysisViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is text analysis Fragment"
     }
     val text: LiveData<String> = _text
 }
