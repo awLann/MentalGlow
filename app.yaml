@@ -1,0 +1,13 @@
+runtime: python312
+
+env_variables:
+  FLASK_ENV: 'production'
+  CLIENT_ID: 'b9eedd59c46b49528c21fceb47d669ee'
+  CLIENT_SECRET: '5b0c8c7c22c448cf81b55f23fa93a1cd'
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto
