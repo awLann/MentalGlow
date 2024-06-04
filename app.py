@@ -4,8 +4,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from flask import Flask, request, url_for, session, redirect, render_template, jsonify
 
-CLIENT_ID = "b9eedd59c46b49528c21fceb47d669ee"
-CLIENT_SECRET = "5b0c8c7c22c448cf81b55f23fa93a1cd"
+CLIENT_ID = "client_id"
+CLIENT_SECRET = "client_secret"
 SECRET_KEY = "secret_key"
 TOKEN_INFO = "token_info"
 SHORT_TERM = "short_term"
