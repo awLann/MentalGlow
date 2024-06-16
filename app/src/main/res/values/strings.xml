@@ -5,4 +5,18 @@
     <string name="title_text_analysis">Text Analysis</string>
     <string name="title_image_analysis">Image Analysis</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="classify">Classify</string>
+    <string name="text_classifier_failed">Classifier failed</string>
+    <string name="mentalglow">MentalGlow</string>
+    <string name="splash_desc">Guide Your Inner Well-being with the Light of MentalGlow!</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="how_is_your_day">How is your day?</string>
+    <string name="how_do_you_feel_today">How do you feel today?</string>
+    <string name="how_are_you_feeling_today">How are you feeling today?</string>
+    <string name="submit">Submit</string>
+    <string name="based_on_what_you_feel_today">Based on what you feel today</string>
+    <string name="next">Next</string>
+    <string name="based_on_the_image_below">Based on the image below</string>
+    <string name="login">Login</string>
 </resources>

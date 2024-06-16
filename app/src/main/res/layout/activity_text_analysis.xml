@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purple"
+    tools:context=".view.text_analysis.TextAnalysisActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bannerTop"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/navy_one"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            >
+
+            <TextView
+                android:id="@+id/tvHowDoYouFeel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/how_are_you_feeling_today"
+                android:textColor="@color/light_purple"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etHowIFeel"
+                android:layout_width="match_parent"
+                android:layout_height="337dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:gravity="top"
+                android:background="@drawable/bluepurple_box_10"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="@string/submit"
+                android:textColor="@color/navy_one"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/skypurple_container_18"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

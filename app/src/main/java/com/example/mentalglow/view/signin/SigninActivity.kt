@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mentalglow.databinding.ActivitySigninBinding
-import com.example.mentalglow.view.home.MainActivity
+import com.example.mentalglow.view.home.HomeActivity
 
 class SigninActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySigninBinding
@@ -17,7 +17,7 @@ class SigninActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.btnSignin.setOnClickListener {
-            val intent = Intent(this@SigninActivity, MainActivity::class.java)
+            val intent = Intent(this@SigninActivity, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
