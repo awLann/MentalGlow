@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -49,6 +50,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -61,5 +64,6 @@ dependencies {
 
     implementation("org.tensorflow:tensorflow-lite-task-vision:0.4.4")
 
-    implementation("com.google.mediapipe:tasks-text:0.20230731")
+    implementation("androidx.credentials:credentials:1.3.0-beta02")
+    implementation("androidx.credentials:credentials-play-services-auth:1.3.0-beta02")
 }

@@ -5,7 +5,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mentalglow.databinding.ActivityTextAnalysisBinding
 import com.example.mentalglow.helper.TextClassifierHelper
-import com.google.mediapipe.tasks.components.containers.Classifications
 import java.text.NumberFormat
 
 class TextAnalysisActivity : AppCompatActivity() {

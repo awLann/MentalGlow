@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "608189124312",
+    "project_id": "c241-ps516",
+    "storage_bucket": "c241-ps516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608189124312:android:001606b48f7555e42851ad",
+        "android_client_info": {
+          "package_name": "com.example.mentalglow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608189124312-4d50rdtq0j9ttimkmi44cn93evtjqti3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalglow",
+            "certificate_hash": "4fcc7472cc9398740a5f00239628422cbc040564"
+          }
+        },
+        {
+          "client_id": "608189124312-k9m0dt5m8ls67qnuqfhjp2s8h9sct08i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalglow",
+            "certificate_hash": "63d12c71b77f9b992864ed84691c844386a40182"
+          }
+        },
+        {
+          "client_id": "608189124312-qqnu0j19qrjacoho2up5ff18n96neauj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJdvAKBf7jsbNBTkPFBdQRmnVciW-dbN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608189124312-d9ihujlmo04co4f6ra30a26v9mg69o6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
