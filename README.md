@@ -56,13 +56,21 @@ This project provides a Flask-based web service for recommending music tracks ba
     cd Spotify-API
     ```
 
-2. Install the required packages:
+2. Create VENV:
+
+    ```bash
+    (Windows)
+    py -3 -m venv .venv
+    .venv\Scripts\activate
+    ```
+
+3. Install the required packages:
 
     ```bash
     pip install flask spotipy
     ```
 
-3. Set the `CLIENT_ID` and `CLIENT_SECRET` variables in `main.py` to your Spotify API credentials.
+4. Set the `CLIENT_ID` and `CLIENT_SECRET` variables in `main.py` to your Spotify API credentials.
 
 ### Running the Server
 
