@@ -11,7 +11,9 @@ import androidx.credentials.CredentialManager
 import androidx.lifecycle.lifecycleScope
 import com.example.mentalglow.R
 import com.example.mentalglow.databinding.ActivityHomeBinding
+import com.example.mentalglow.view.image_analysis.ImageAnalysisActivity
 import com.example.mentalglow.view.signin.SigninActivity
+import com.example.mentalglow.view.text_analysis.TextAnalysisActivity
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -34,8 +36,11 @@ class HomeActivity : AppCompatActivity() {
             return
         }
 
-        binding.btnCheck.setOnClickListener {
-
+        binding.btnCheckImage.setOnClickListener {
+            startActivity(Intent(this, ImageAnalysisActivity::class.java))
+        }
+        binding.btnCheckText.setOnClickListener {
+            startActivity(Intent(this, TextAnalysisActivity::class.java))
         }
     }
 

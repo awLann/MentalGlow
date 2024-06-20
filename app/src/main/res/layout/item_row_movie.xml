@@ -23,6 +23,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:textSize="24sp"
             android:fontFamily="@font/raleway_semibold"
+            android:textColor="@color/navy_one"
             tools:text="Movie Title"/>
 
         <TextView
@@ -34,6 +35,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_movie_title"
             android:textSize="16sp"
             android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/navy_one"
             tools:text="Movie Genre"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

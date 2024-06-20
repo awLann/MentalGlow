@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mentalglow.data.network.ApiConfig
-import com.example.mentalglow.data.response.MovieResponse
 import com.example.mentalglow.data.response.MovieResponseItem
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,10 +17,6 @@ class MovieViewModel : ViewModel() {
 
     private val _listMovie = MutableLiveData<List<MovieResponseItem>>()
     val listMovie: LiveData<List<MovieResponseItem>> = _listMovie
-
-    init {
-        findMovie("angry")
-    }
 
     fun findMovie(query: String) {
         _isLoading.value = true

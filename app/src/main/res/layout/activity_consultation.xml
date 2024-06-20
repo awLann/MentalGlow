@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white_blue"
-    tools:context=".view.home.HomeActivity">
+    tools:context=".view.consultation.ConsultationActivity">
 
     <TextView
-        android:id="@+id/tv_home"
+        android:id="@+id/tv_consultation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -18,57 +18,60 @@
         android:textSize="36sp"
         android:textColor="@color/navy_one"
         android:fontFamily="@font/poppins_bold"
-        android:text="@string/welcome_text"
+        android:text="Do you"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_home_desc"
+        android:id="@+id/tv_consultation_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/raleway_medium"
-        android:text="@string/how_is_your_day"
+        android:text="need a consultation?"
         android:textAlignment="center"
         android:textColor="@color/navy_one"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_home"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_consultation"/>
 
     <ImageView
-        android:id="@+id/iv_home"
+        android:id="@+id/iv_consultation"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginHorizontal="30dp"
-        android:src="@drawable/undraw_meditation"
+        android:src="@drawable/undraw_reading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_home_desc"
-        android:contentDescription="Meditation" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_consultation_desc"/>
 
-    <Button
-        android:id="@+id/btn_check_image"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:text="@string/check_image_based"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_home"
-        app:layout_constraintBottom_toTopOf="@+id/btn_check_text"/>
+        app:layout_constraintTop_toBottomOf="@+id/iv_consultation">
 
-    <Button
-        android:id="@+id/btn_check_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:text="@string/check_text_based"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_check_image"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Yes"/>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="No"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
