@@ -7,15 +7,15 @@ const width = 48;
 const classLabels = ['Angry', 'Happy', 'Neutral', 'Sad'];
 
 // Load the custom model
-async function loadModel(modelPath) {
+async function loadModelFace(modelPath) {
     model = await tf.loadLayersModel(`file://models/faceDetection/model.json`);
-    console.log('Custom model loaded successfully');
+    console.log('Custom face detection model loaded successfully');
 }
 
 // Function to predict face expression
 async function predict(imageData) {
     if (!model) {
-        throw new Error('Model has not been loaded yet');
+        throw new Error('face detection Model has not been loaded yet');
     }
 
     const imageTensor = await loadImageAndPreprocess(imageData);
@@ -44,6 +44,6 @@ async function loadImageAndPreprocess(imageData) {
 }
 
 module.exports = {
-    loadModel,
+    loadModelFace,
     predict,
 };
