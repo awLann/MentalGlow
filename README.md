@@ -121,3 +121,5 @@ Start the FastAPI server using Uvicorn:
 
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8080
+or
+uvicorn main:app --reload
