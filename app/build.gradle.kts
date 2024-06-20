@@ -37,6 +37,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -60,9 +61,11 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("androidx.camera:camera-camera2:1.2.3")
+    implementation("androidx.camera:camera-lifecycle:1.2.3")
+    implementation("androidx.camera:camera-view:1.2.3")
 
-    implementation("org.tensorflow:tensorflow-lite-task-vision:0.4.4")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("androidx.credentials:credentials:1.3.0-beta02")
     implementation("androidx.credentials:credentials-play-services-auth:1.3.0-beta02")

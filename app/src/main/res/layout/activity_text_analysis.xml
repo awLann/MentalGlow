@@ -1,78 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_purple"
+    android:background="@color/white_blue"
     tools:context=".view.text_analysis.TextAnalysisActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/bannerTop"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/navy_one"
-        />
+        android:layout_height="wrap_content">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bannerTop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
-        <LinearLayout
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
+        <TextView
+            android:id="@+id/tv_text_analysis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="36dp"
-            >
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="textStart"
+            android:textSize="36sp"
+            android:textColor="@color/navy_one"
+            android:fontFamily="@font/poppins_bold"
+            android:text="How"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-            <TextView
-                android:id="@+id/tvHowDoYouFeel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="@string/how_are_you_feeling_today"
-                android:textColor="@color/light_purple"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tv_text_analysis_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="do you feel today?"
+            android:textAlignment="textStart"
+            android:textColor="@color/navy_one"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_analysis"/>
 
-            <EditText
-                android:id="@+id/etHowIFeel"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_layout_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text_analysis_desc">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_text"
                 android:layout_width="match_parent"
-                android:layout_height="337dp"
-                android:layout_marginTop="16dp"
-                android:inputType="textMultiLine"
-                android:padding="12dp"
+                android:layout_height="match_parent"
                 android:gravity="top"
-                android:background="@drawable/bluepurple_box_10"
-                />
+                android:lines="15"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnSubmit"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:text="@string/submit"
-                android:textColor="@color/navy_one"
-                android:textAllCaps="false"
-                android:textSize="20sp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginTop="36dp"
-                android:background="@drawable/skypurple_container_18"
-                />
+        <Button
+            android:id="@+id/btn_analyze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Analyze"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_layout_text"/>
 
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/navy_one"
+            app:layout_constraintEnd_toEndOf="@+id/btn_analyze"
+            app:layout_constraintStart_toStartOf="@+id/btn_analyze"
+            app:layout_constraintTop_toBottomOf="@+id/btn_analyze"
+            tools:text="Result" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
