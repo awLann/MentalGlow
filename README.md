@@ -18,3 +18,17 @@ M001D4KX1697 | Angel Martha Pradina Pangaribuan | Machine Learning |
 C200D4KY0486 | Ganar Khatir Faza Zain | Cloud Computing | 
  |  | 
 C010D4KY0254 | Daffa Anis Fahrizi | Cloud Computing | 
+
+## Branches
+- [Main Branch](https://github.com/awLann/MentalGlow/tree/main)
+- Mobile Development Branch:
+  - [AndoidLogin Branch](https://github.com/awLann/MentalGlow/tree/AndroidLogin)
+  - [android-alt Branch](https://github.com/awLann/MentalGlow/tree/AndroidLogin)
+  - [androidd Branch](https://github.com/awLann/MentalGlow/tree/androidd)
+- Machine Learning Branch:
+  - [Machine Learning Branch](https://github.com/awLann/MentalGlow/tree/data)
+  - [Model-text-ML Branch](https://github.com/awLann/MentalGlow/tree/Model-text-ML)
+- Cloud Computing Branches:
+  - [Cloud-Computing](https://github.com/awLann/MentalGlow/tree/Cloud-Computing)
+  - [Movies-API Branch](https://github.com/awLann/MentalGlow/tree/Movies-API)
+  - [Spotify-API Branch](https://github.com/awLann/MentalGlow/tree/Spotify-API)
