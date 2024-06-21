@@ -23,9 +23,7 @@ C010D4KY0254 | Daffa Anis Fahrizi | Cloud Computing |
 ## Branches
 - [Main Branch](https://github.com/awLann/MentalGlow/tree/main)
 - Mobile Development Branch:
-  - [AndoidLogin Branch](https://github.com/awLann/MentalGlow/tree/AndroidLogin)
-  - [android-alt Branch](https://github.com/awLann/MentalGlow/tree/AndroidLogin)
-  - [androidd Branch](https://github.com/awLann/MentalGlow/tree/androidd)
+  - [android-alt Branch](https://github.com/awLann/MentalGlow/tree/android-alt)
 - Machine Learning Branch:
   - [Data](https://github.com/awLann/MentalGlow/tree/data)
   - [Model-text-ML Branch](https://github.com/awLann/MentalGlow/tree/Model-text-ML)
