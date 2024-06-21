@@ -1,5 +1,6 @@
 # MentalGlow
-![Bangkit 2024 - Peer Review Presentation](https://github.com/awLann/MentalGlow/assets/141085800/84844046-cb54-4257-a8a4-e188ecb24920)
+![mentalglow](https://github.com/awLann/MentalGlow/assets/87596554/280684cd-af56-4406-aeb0-5899694e3c93)
+
 
 Mental Health App based on Text Classification and Face Emotion Detection
 
